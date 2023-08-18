@@ -1,0 +1,253 @@
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: lightgray;
+  }
+  
+/* Navbar */
+
+/* Create */
+.form-create {
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    padding-right: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+
+  .form-create > h2 {
+    text-align: center;
+  }
+  
+  .create {
+    margin-bottom: 15px;
+  }
+  
+  .label-create {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .inp-create {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .button-create {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-create:hover {
+    background-color: #0056b3;
+  }
+
+  /* Create */
+
+
+  /* Read */
+
+.read {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  
+  .form-read {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label-read,
+  .select-read,
+  .inp-read {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .select-read,
+  .inp-read {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .btn-read {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-read:hover {
+    background-color: #0056b3;
+  }
+  
+  .ul-read {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .li-read {
+    margin-bottom: 5px;
+  }
+
+  .table-read {
+    width: 650px;
+    text-align: center;
+    margin-top: 20px;
+  }
+/* Read */  
+
+/* Update */
+
+.update {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  
+  .update > h2 {
+    margin-bottom: 10px;
+  }
+  
+  .form-update {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-update > label,
+  .form-update > input {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .form-update > input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-update button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-update button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+/* Update */  
+
+/* Delete */
+
+.delete {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+  }
+  
+  .delete > h2 {
+    margin-bottom: 10px;
+  }
+  
+  .form-delete {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-delete label,
+  .form-delete input {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .form-delete input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-delete button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-delete button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+/* Delete */  
