@@ -68,9 +68,7 @@ const READ_BOOK_AUTHOR = gql`
 
 const REMOVE_BOOK = gql`
   mutation deleteBook($isbn: String!) {
-    deleteBook(isbn: $isbn) {
-      isbn
-    }
+    deleteBook(isbn: $isbn)
   }
 `;
 

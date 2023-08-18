@@ -4,7 +4,6 @@ import { useMutation } from '@apollo/client';
 
 export default function Delete() {
     const [isbn, setIsbn] = useState('');
-    const [status, setStatus] = useState('');
   
     const handleIsbnChange = (e) => {
       setIsbn(e.target.value);
@@ -23,6 +22,7 @@ export default function Delete() {
           });
   
           alert("Book removed successfully")
+          setIsbn("")
           
           } catch (error) {
           console.error('Error removing book:', error);

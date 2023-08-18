@@ -3,6 +3,7 @@ const Book = require('./db');
 const resolvers = {
   Query: {
     getBookByISBN: async (_, { isbn }) => {
+      console.log("triggered")
       return await Book.findOne({ isbn });
     },
     getAllBooks: async () => {
@@ -24,13 +25,8 @@ const resolvers = {
       return await Book.findOneAndUpdate({ isbn }, rest, { new: true });
     },
     deleteBook: async (_, { isbn }) => {
-      try {
-        console.log("received")
-        await Book.findOneAndDelete({ isbn });
-        return true;
-      } catch (error) {
-        console.log(error)
-      }
+      await Book.findOneAndDelete({ isbn });
+      return true;
     },
   },
 };

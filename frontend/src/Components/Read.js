@@ -13,18 +13,10 @@ export default function Read() {
     const [searchType, setSearchType] = useState('all');
     const [searchValue, setSearchValue] = useState('');
     const [searchResult, setSearchResult] = useState(null);
-    /* const [skipQuery, setSkipQuery] = useState(false)
-    const [queryOptions, setQueryOptions] = useState(null)
-    const [runQUery, setRunQuery] = useState(false) */
 
 
     const [executeQuery, { error, data }] = useLazyQuery(READ_ALL_BOOK)
 
-    /* useEffect(() => {
-      if (runQUery) => {
-        executeQuery()
-      }
-    }, [runQUery]) */
 
     const handleSearchTypeChange = (e) => {
         setSearchType(e.target.value);
@@ -133,11 +125,11 @@ export default function Read() {
                   <th>Price</th>
                 </tr>
                 {searchResult.map((book) => (
-                  <tr key={book.isbn}> {/* Don't forget to add a unique key */}
+                  <tr key={book.isbn}> 
                     <td>{book.title}</td>
                     <td>{book.author}</td>
                     <td>{book.isbn}</td>
-                    <td>₹ {book.price}</td> {/* No need for backticks and curly braces here */}
+                    <td>₹ {book.price}</td> 
                   </tr>
                 ))}
               </table>
